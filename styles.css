@@ -9,24 +9,40 @@ body{
     align-items: center;
 }
 
+.options{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+.rainbowbtn, .blackbtn, .eraserbtn, .cleanbtn{
+    display: flex;
+    border-style: solid;
+    border-radius: 5%;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rainbowbtn:hover, .blackbtn:hover, .eraserbtn:hover, .cleanbtn:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+    background-color: honeydew;
+}
+
+
 .squareDivs{
     display: grid;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     border-style: solid;
     border-color: black;
     background-color: whitesmoke;
 }
 
 .gridDivs{
-border-style: solid;
-border-width: 1px;
-}
-
-.paintBlack{
-    background-color: black;
-}
-
-.eraser{
-    background-color: whitesmoke;
+    border-style: hidden;
+    border-width: 1px;
 }
