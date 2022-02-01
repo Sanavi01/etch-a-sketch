@@ -9,13 +9,13 @@ body{
     align-items: center;
 }
 
-
 .squareDivs{
     display: grid;
     width: 600px;
     height: 600px;
     border-style: solid;
     border-color: black;
+    background-color: whitesmoke;
 }
 
 .gridDivs{
@@ -25,4 +25,8 @@ border-width: 1px;
 
 .paintBlack{
     background-color: black;
+}
+
+.eraser{
+    background-color: whitesmoke;
 }
