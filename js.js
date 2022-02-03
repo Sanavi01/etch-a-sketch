@@ -4,7 +4,12 @@ const blackbtn = document.querySelector('.blackbtn')
 const eraserbtn = document.querySelector('.eraserbtn')
 const cleanbtn = document.querySelector('.cleanbtn')
 
-let quantify = prompt("De cuanto quieres que sea la cuadricula")
+let quantify = 0
+
+function size() {
+    const size = document.getElementById("size").value;
+    quantify = size
+}
 
 function createDivs() {
     let totalOfDivs = (quantify * quantify);
@@ -13,7 +18,7 @@ function createDivs() {
         divs.classList.add('gridDivs');
         squareDivs.appendChild(divs)
     }
-    squareDivs.setAttribute('style', `grid-template-columns: repeat(${quantify}, 1fr)`)
+    squareDivs.setAttribute('style', `grid-template-columns: repeat(${quantify}, 1fr`)
 }
 
 function paintBlack() {
@@ -44,10 +49,18 @@ function rainbowColor() {
     })
 }
 
-function clean () {
+function clean() {
     const divsBlack = document.querySelectorAll('.gridDivs')
     divsBlack.forEach(gridDivs => {
         gridDivs.setAttribute('style', 'background-color: whitesmoke;')
+    })
+}
+
+
+function deleteAll() {
+    const divsBlack = document.querySelectorAll('.gridDivs')
+    divsBlack.forEach(gridDivs => {
+        gridDivs.remove()
     })
 }
 
@@ -66,9 +79,23 @@ function selectOption() {
     })
 }
 
+function start() {
+    const start = document.querySelector(".startbtn")
+    start.addEventListener('click', () => {
+        size()
+        if (quantify < 12 || quantify > 64) {
+            alert("Select a number recommended! The page will not run correctly")
+        } else {
+            deleteAll()
+            createDivs()
+        }
+    })
+}
 
-createDivs();
+start();
 selectOption();
+
+
 
 
 

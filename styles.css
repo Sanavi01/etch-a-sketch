@@ -1,6 +1,7 @@
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    background-color: rgb(180, 180, 180);
 }
 
 .container{
@@ -24,6 +25,7 @@ body{
     height: 30px;
     align-items: center;
     justify-content: center;
+    background-color: rgb(180, 180, 180);
 }
 
 .rainbowbtn:hover, .blackbtn:hover, .eraserbtn:hover, .cleanbtn:hover{
@@ -31,7 +33,6 @@ body{
     transform: scale(1.1);
     background-color: honeydew;
 }
-
 
 .squareDivs{
     display: grid;
@@ -44,5 +45,27 @@ body{
 
 .gridDivs{
     border-style: hidden;
-    border-width: 1px;
+}
+
+
+.startbtn{
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 3%;
+    background-color: rgb(201, 186, 145);
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+.startbtn:hover{
+    transition: 0.35s;
+    transform: scale(1.1);
+    background-color: rgb(201, 180, 123);
+}
+
+.startbtn:active{
+    transform: scale(1.2);
+    background-color:black;
+    color: white;
 }
