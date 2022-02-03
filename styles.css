@@ -15,6 +15,7 @@ body{
     justify-content: center;
     gap: 30px;
     padding: 10px;
+    font-size: medium;
 }
 
 .rainbowbtn, .blackbtn, .eraserbtn, .cleanbtn{
@@ -47,6 +48,9 @@ body{
     border-style: hidden;
 }
 
+.askForNumber{
+    font-size: small;
+}
 
 .startbtn{
     border-style: solid;
@@ -54,8 +58,10 @@ body{
     border-radius: 3%;
     background-color: rgb(201, 186, 145);
     padding: 5px;
-    margin: 5px;
-    
+    margin: 15px;
+    width: 100px;
+    height: auto;
+    font-size: medium;
 }
 
 .startbtn:hover{
